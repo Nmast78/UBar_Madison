@@ -19,6 +19,7 @@
         font-family: 'Times New Roman', Times, serif;
         font-size: 26px;
         font-weight: 700;
+        padding-top: 30px;
     }
 
     #Madison {
@@ -26,6 +27,7 @@
         font-family:'Borel';
         font-size: 24px;
         font-weight: 600;
+        padding-top: 31px;
     }
 
 
@@ -39,6 +41,8 @@ img {
 .text-container {
     padding-top: 20px;
     line-height: 3pt;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
 }
 
 /* Acceptance percentagetext */    
@@ -56,7 +60,7 @@ img {
 
 /* Horizontal line */
 hr {
-    margin-top: -35px;
+    margin-top: -30px;
     border: 1px solid;
 }
 
