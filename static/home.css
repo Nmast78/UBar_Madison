@@ -28,6 +28,32 @@
         font-weight: 600;
     }
 
+
+/* Sections for individual bars */    
+img {
+    float: left;
+    margin-right: 20px;
+}
+
+/* Sectional text to the right of bar logos */    
+.text-container {
+    padding-top: 20px;
+    line-height: 3pt;
+}
+
+/* Acceptance percentagetext */    
+.graph-text-container {
+    color: green;
+    font-size: 15px;
+    padding-left: 260px;
+}
+
+/* Current waiting time text */    
+.time-text-container {
+    font-weight: 600;
+    font-size: 25px;
+}
+
 /* Horizontal line */
 hr {
     margin-top: -35px;
@@ -38,7 +64,7 @@ hr {
 .text {
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .button {
