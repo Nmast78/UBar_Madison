@@ -49,18 +49,18 @@ hr {
     justify-content: center;
 }
 
-    #insert-input {
-        background-color:rgb(36, 179, 7);
-        color: white;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 20px;
-        border: none;
-        border-radius: 30px;
-        padding-left: 80px;
-        padding-right: 80px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
+#insert-input {
+    background-color:rgb(36, 179, 7);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    border: none;
+    border-radius: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
     
 /* Sections for individual bars */    
 img {
@@ -73,6 +73,7 @@ img {
     padding-top: 20px;
     line-height: 3pt;
     font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
     font-weight: 600;
 }
 
