@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Experience</title>
+    <link rel="stylesheet" href="../static/addBar.css">
+</head>
+<body>
+    <!-- Header containing logo, name, and horizontal line -->
+    <header>
+        <div class="header-content">
+            <img id="logo" src="../images/Capital.png" alt="Capitol">
+            <div class="head-text">
+                <p id="UBar">UBar-</p>
+                <p id="Madison">&nbsp;Madison</p>
+            </div>
+            <hr>
+        </div>
+    </header>
+
+    <div class="add-input">
+        
+        <br>
+
+        <p class="text">What bar did you visit?</p>
+        <!--Drop down menu with all of the bars-->
+
+
+        <p class="text">How long was your wait time?</p>
+        <!--Slider bar with times in 5 minute intervals-->
+        <div class="slidecontainer">
+            <input type="range" min="1" max="60" value="0" step="5" class="slider" id="myRange">
+        </div>
+        <div class="wait-time-text">
+            <p id="wait-minutes">0</p>
+            <p id="minutes">minutes</p>
+        </div>
+
+        <p class="text">Did you get accepted or rejected?</p>
+        <!--Accepted and rejected buttons, only one can be selected-->
+
+        <br>
+
+        <div class="button">
+            <button id="insert-input">ENTER</button>
+        </div>
+
+    </div>
+</body>
+</html>
