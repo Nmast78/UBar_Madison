@@ -36,13 +36,41 @@ hr {
     border: 1px solid;
 }
 
-/* Button for users to add their experience */
 .text {
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 700;
 }
 
+/*Slider Bar for wait time*/
+.slider {
+    position: relative;
+    left: 8%;
+    width: 80%;
+    height: 10px;
+    border-radius: 10px;  
+  }
+
+  .wait-time-text {
+    display: inline-flex;
+    text-align: right;
+    }
+
+    #wait-minutes {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 18px;
+        font-weight: 500;
+        padding-left: 240px;
+    }
+
+    #minutes {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 18px;
+        font-weight: 500;
+        padding-left: 20px;
+    }
+
+/* Button to add experience*/
 .button {
     display: flex;
     align-items: center;
@@ -61,30 +89,3 @@ hr {
         padding-top: 15px;
         padding-bottom: 15px;
     }
-    
-/* Sections for individual bars */    
-img {
-    float: left;
-    margin-right: 20px;
-}
-
-/* Sectional text to the right of bar logos */    
-.text-container {
-    padding-top: 20px;
-    line-height: 3pt;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 600;
-}
-
-/* Acceptance percentagetext */    
-.graph-text-container {
-    color: green;
-    font-size: 15px;
-    padding-left: 260px;
-}
-
-/* Current waiting time text */    
-.time-text-container {
-    font-weight: 600;
-    font-size: 25px;
-}
