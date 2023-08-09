@@ -36,13 +36,23 @@ hr {
     border: 1px solid;
 }
 
+/* General text for the webpage */
 .text {
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     font-weight: 700;
 }
 
-/*Slider Bar for wait time*/
+/* Drop down menu to select bar */
+.dropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    font-size: 12px;
+}
+
+/* Slider Bar for wait time */
 .slider {
     position: relative;
     left: 8%;
