@@ -25,12 +25,21 @@
 
         <p class="text">What bar did you visit?</p>
         <!--Drop down menu with all of the bars-->
-
+        <div class="dropdown">
+            <select name="bars" id="bars" required>
+                <option value="Wando's">Wando's</option>
+                <option value="Danny's">Danny's</option>
+                <option value="State Street Brats">State Street Brats</option>
+                <option value="Sconnie's">Sconnie's</option>
+                <option value="Chaser's 2.0">Chaser's 2.0</option>
+            </select>
+        </div>
+          
 
         <p class="text">How long was your wait time?</p>
         <!--Slider bar with times in 5 minute intervals-->
         <div class="slidecontainer">
-            <input type="range" min="1" max="60" value="0" step="5" class="slider" id="myRange">
+            <input type="range" min="0" max="60" value="0" step="5" class="slider" id="myRange">
         </div>
         <div class="wait-time-text">
             <p id="wait-minutes">0</p>
@@ -39,6 +48,12 @@
 
         <p class="text">Did you get accepted or rejected?</p>
         <!--Accepted and rejected buttons, only one can be selected-->
+        <div class="dropdown">
+            <select name="get-in" id="get-in" required>
+                <option value="Accepted">Accepted</option>
+                <option value="Rejected">Rejected</option>
+            </select>
+        </div>
 
         <br>
 
