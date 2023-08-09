@@ -96,7 +96,7 @@ img {
 
 /* Footer CSS */
 footer {
-    background-color: black;
+    background-color: rgb(59, 59, 59);
 }
 
 .footerContainer {
@@ -114,7 +114,6 @@ footer {
     padding: 10px;
     background-color: white;
     margin: 10px;
-    border-radius: 50;
 }
 .socialIcons a i {
     font-size: 2em;
