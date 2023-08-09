@@ -31,9 +31,13 @@
     }
 
 /* Horizontal line */
-hr {
+.break {
     margin-top: -30px;
     border: 1px solid;
+}
+
+.light-break {
+    margin-top: 5px;
 }
 
 /* Button for users to add their experience */
