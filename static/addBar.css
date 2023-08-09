@@ -14,27 +14,29 @@
     display: inline-flex;
 }
 
-    #UBar {
-        color: black;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 26px;
-        font-weight: 700;
-        padding-top: 30px;
-    }
+#UBar {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 26px;
+    font-weight: 700;
+    padding-top: 30px;
+}
 
-    #Madison {
-        color:crimson;
-        font-family:'Borel';
-        font-size: 24px;
-        font-weight: 600;
-        padding-top: 31px;
-    }
+#Madison {
+    color:crimson;
+    font-family:'Borel';
+    font-size: 24px;
+    font-weight: 600;
+    padding-top: 31px;
+}
+
 
 /* Horizontal line */
 hr {
     margin-top: -30px;
     border: 1px solid;
 }
+
 
 /* General text for the webpage */
 .text {
@@ -43,14 +45,24 @@ hr {
     font-weight: 700;
 }
 
+
 /* Drop down menu to select bar */
 .dropdown {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20px;
-    font-size: 12px;
+    padding: 15px;
 }
+
+#bars {
+    width: 60%;
+    height: 40px;
+    font-size: 15px;
+    text-align: center;
+    background-color: rgb(192, 190, 190);
+    border-radius: 5px;
+}
+
 
 /* Slider Bar for wait time */
 .slider {
@@ -59,26 +71,38 @@ hr {
     width: 80%;
     height: 10px;
     border-radius: 10px;  
-  }
+}
 
-  .wait-time-text {
-    display: inline-flex;
-    text-align: right;
-    }
+.wait-time-text {
+display: inline-flex;
+text-align: center;
+}
 
-    #wait-minutes {
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 18px;
-        font-weight: 500;
-        padding-left: 240px;
-    }
+#wait-minutes {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: 600;
+    padding-left: 130px;
+}
 
-    #minutes {
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 18px;
-        font-weight: 500;
-        padding-left: 20px;
-    }
+#minutes {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: 700;
+    padding-left: 20px;
+}
+
+
+/* Drop down for accepted or rejected */
+#get-in {
+    width: 30%;
+    height: 40px;
+    font-size: 15px;
+    text-align: center;
+    background-color: rgb(192, 190, 190);
+    border-radius: 5px;
+}
+
 
 /* Button to add experience*/
 .button {
@@ -87,15 +111,15 @@ hr {
     justify-content: center;
 }
 
-    #insert-input {
-        background-color:rgb(36, 179, 7);
-        color: white;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 20px;
-        border: none;
-        border-radius: 30px;
-        padding-left: 80px;
-        padding-right: 80px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
+#insert-input {
+    background-color:rgb(36, 179, 7);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    border: none;
+    border-radius: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}

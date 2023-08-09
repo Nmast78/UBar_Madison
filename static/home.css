@@ -1,6 +1,7 @@
 /* Import font for business name */
 @import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
 
+
 /* Capitol logo in header */
 #logo {
     max-width: 70px;
@@ -9,26 +10,28 @@
     padding-top: 12px;
 }
 
+
 /* Header business name */
 .head-text {
     display: inline-flex;
 }
 
-    #UBar {
-        color: black;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 26px;
-        font-weight: 700;
-        padding-top: 30px;
-    }
+#UBar {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 26px;
+    font-weight: 700;
+    padding-top: 30px;
+}
 
-    #Madison {
-        color:crimson;
-        font-family:'Borel';
-        font-size: 24px;
-        font-weight: 600;
-        padding-top: 31px;
-    }
+#Madison {
+    color:crimson;
+    font-family:'Borel';
+    font-size: 24px;
+    font-weight: 600;
+    padding-top: 31px;
+}
+
 
 /* Horizontal line */
 .break {
@@ -39,6 +42,7 @@
 .light-break {
     margin-top: 5px;
 }
+
 
 /* Button for users to add their experience */
 .text {
@@ -66,6 +70,7 @@
     padding-bottom: 15px;
 }
     
+
 /* Sections for individual bars */    
 img {
     float: left;
@@ -93,6 +98,7 @@ img {
     font-weight: 600;
     font-size: 25px;
 }
+
 
 /* Footer CSS */
 footer {
