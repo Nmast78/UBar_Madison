@@ -37,6 +37,19 @@ hr {
     border: 1px solid;
 }
 
+/* Back button to go back to homepage*/
+#back_button {
+    background-color: rgb(221, 9, 9);
+    border: none;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 /* General text for the webpage */
 .text {
