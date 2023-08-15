@@ -7,3 +7,13 @@ function goToAddPage(url) {
 function goToHomePage(url) {
     window.location.href = "home.html"
 }
+
+let popup = document.getElementById("popup");
+
+function openPopup() {
+    popup.classList.add("open-popup")
+}
+
+function closePopup() {
+    popup.classList.remove("open-popup")
+}
