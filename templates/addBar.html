@@ -75,14 +75,22 @@
         <br>
 
         <div class="popupContainer">
-            <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+            <button type="submit" class="btn" onclick="openPopup()" id="insert-input">Submit</button>
             <div class="popup" id="popup">
                 <img id="popup img" src="../images/Tick.png" alt="Tick">
                 <h2>Thank You!</h2>
                 <p>Your details have been successfully submitted. Thanks!</p>
-                <button type="button" onclick="closePopup()">OK</button>
+                <button type="button" onclick="goToHomePage('home.html')">OK</button>
             </div>
         </div>
+
+        <!-- <script>
+            let popup = document.getElementById("popup");
+
+            function openPopup() {
+                popup.classList.add("open-popup")
+            }
+        </script> -->
 
         <!-- <div class="button" class="popup">
             <span class="popuptext" id="mypopup" button onclick="goToHomePage('home.html')" id="insert-input">ENTER</button></span>

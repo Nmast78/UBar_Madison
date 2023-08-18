@@ -8,12 +8,8 @@ function goToHomePage(url) {
     window.location.href = "home.html"
 }
 
-let popup = document.getElementById("popup");
-
+// Function to open popup after user adds bar experience
 function openPopup() {
+    let popup = document.getElementById("popup");
     popup.classList.add("open-popup")
-}
-
-function closePopup() {
-    popup.classList.remove("open-popup")
 }
