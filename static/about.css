@@ -32,7 +32,6 @@
     padding-top: 31px;
 }
 
-
 /* Horizontal line */
 .break {
     margin-top: -30px;
@@ -42,62 +41,23 @@
 .light-break {
     margin-top: 5px;
 }
-
-/* Button for users to add their experience */
-.text {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    font-weight: 400;
-}
-
-.button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#insert-input {
-    background-color:rgb(36, 179, 7);
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    border: none;
-    border-radius: 30px;
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
     
-
-/* Sections for individual bars */    
-img {
-    float: left;
-    margin-right: 20px;
+/* Change image size */
+.image-small {
+    max-width: 125px; 
+    height: auto;
 }
 
-/* Sectional text to the right of bar logos */    
-.text-container {
-    padding-top: 20px;
-    line-height: 3pt;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 14px;
-    font-weight: 600;
-}
+.image-medium {
+    max-width: 230px; 
+    height: auto;
+    align-items: center;
+}     
 
-/* Acceptance percentage text */    
-.graph-text-container {
-    color: green;
-    font-size: 15px;
-    padding-left: 260px;
-}
-
-/* Current waiting time text */    
-.time-text-container {
-    font-weight: 600;
-    font-size: 25px;
-}
-
+/* Change text for "About" header */
+.about-content h1 {
+    font-size: 30px;
+}     
 
 /* Footer CSS */
 footer {

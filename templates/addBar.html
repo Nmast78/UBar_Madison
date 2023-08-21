@@ -48,7 +48,7 @@
                 </select>
             </div>
         </div>
-          
+
         <div>
             <p class="text">How long was your wait time?</p>
             <div class="wait-time-text">
@@ -57,7 +57,7 @@
             </div>
             <!--Slider bar with times in 5 minute intervals-->
             <div class="slidecontainer">
-                <input type="range" min="0" max="60" value="0" step="5" class="slider" id="myRange">
+                <input type="range" min="0" max="60" value="0" step="5" class="slider" id="myRange" onclick="updateTimeSlider()">
             </div>
         </div>
 
@@ -76,6 +76,7 @@
         <br>
         <br>
 
+        <!-- Popup thanking user for submitting details, sends them back to home page -->
         <div class="popupContainer">
             <button type="submit" class="btn" onclick="openPopup()" id="insert-input">Submit</button>
             <div class="popup" id="popup">
@@ -85,18 +86,6 @@
                 <button type="button" onclick="goToHomePage('home.html')">OK</button>
             </div>
         </div>
-
-        <!-- <script>
-            let popup = document.getElementById("popup");
-
-            function openPopup() {
-                popup.classList.add("open-popup")
-            }
-        </script> -->
-
-        <!-- <div class="button" class="popup">
-            <span class="popuptext" id="mypopup" button onclick="goToHomePage('home.html')" id="insert-input">ENTER</button></span>
-        </div> -->
 
     </div>
 </body>
