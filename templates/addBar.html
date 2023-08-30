@@ -6,6 +6,7 @@
     <title>Add Experience</title>
     <script src="../script.js"></script>
     <link rel="stylesheet" href="../static/addBar.css">
+    <link rel="shortcut icon" href="#">
 </head>
 <body>
     <!-- Header containing logo, name, and horizontal line -->
@@ -26,66 +27,68 @@
 
     <div class="add-input">
         
-
-        <div>
-            <p class="text">What bar did you visit?</p>
-            <!--Drop down menu with all of the bars-->
-            <div class="dropdown">
-                <select name="bars" id="bars" required>
-                    <option disabled selected value="base"> -- select an option -- </option>
-                    <option value="Chaser's 2.0">Chaser's 2.0</option>
-                    <option value="Churchkey Bar and Grill">Churchkey Bar and Grill</option>
-                    <option value="City Bar">City Bar</option>
-                    <option value="Danny's Pub">Danny's Pub</option>
-                    <option value="Jordan's Big Ten Pub">Jordan's Big Ten Pub</option>
-                    <option value="Lucky's 1313 Brew Pub">Lucky's 1313 Brew Pub</option>
-                    <option value="Monday's Bar">Monday's Bar</option>
-                    <option value="Sconnie Bar">Sconnie Bar</option>
-                    <option value="The Double U">The Double U</option>
-                    <option value="The Kollege Klub">The Kollege Klub</option>
-                    <option value="State Street Brats">State Street Brats</option>
-                    <option value="Wando's Bar and Grill">Wando's Bar and Grill</option>
-                </select>
+        <form action="../database.php", method="POST">
+            <div>
+                <p class="text">What bar did you visit?</p>
+                <!--Drop down menu with all of the bars-->
+                <div class="dropdown">
+                    <select name="bars" id="bars" required>
+                        <option disabled selected value="base"> -- select an option -- </option>
+                        <option value="Chaser's 2.0">Chaser's 2.0</option>
+                        <option value="Churchkey Bar and Grill">Churchkey Bar and Grill</option>
+                        <option value="City Bar">City Bar</option>
+                        <option value="Danny's Pub">Danny's Pub</option>
+                        <option value="Jordan's Big Ten Pub">Jordan's Big Ten Pub</option>
+                        <option value="Lucky's 1313 Brew Pub">Lucky's 1313 Brew Pub</option>
+                        <option value="Monday's Bar">Monday's Bar</option>
+                        <option value="Sconnie Bar">Sconnie Bar</option>
+                        <option value="The Double U">The Double U</option>
+                        <option value="The Kollege Klub">The Kollege Klub</option>
+                        <option value="State Street Brats">State Street Brats</option>
+                        <option value="Wando's Bar and Grill">Wando's Bar and Grill</option>
+                    </select>
+                </div>
             </div>
-        </div>
 
-        <div>
-            <p class="text">How long was your wait time?</p>
-            <div class="wait-time-text">
-                <p id="wait-minutes">0</p>
-                <p id="minutes">minutes</p>
+            <div>
+                <p class="text">How long was your wait time?</p>
+                <div class="wait-time-text">
+                    <p id="wait-minutes">0</p>
+                    <p id="minutes">minutes</p>
+                </div>
+                <!--Slider bar with times in 5 minute intervals-->
+                <div class="slidecontainer">
+                    <input required name="wait" type="range" min="0" max="60" value="0" step="5" class="slider" id="myRange" onclick="updateTimeSlider()">
+                </div>
             </div>
-            <!--Slider bar with times in 5 minute intervals-->
-            <div class="slidecontainer">
-                <input type="range" min="0" max="60" value="0" step="5" class="slider" id="myRange" onclick="updateTimeSlider()">
-            </div>
-        </div>
 
-        <div>
-            <p class="text">Did you get accepted or rejected?</p>
-            <!--Accepted and rejected buttons, only one can be selected-->
-            <div class="dropdown">
-                <select name="get-in" id="get-in" required>
-                    <option disabled selected value="base"> -- select -- </option>
-                    <option value="Accepted">Accepted</option>
-                    <option value="Rejected">Rejected</option>
-                </select>
+            <div>
+                <p class="text">Did you get accepted or rejected?</p>
+                <!--Accepted and rejected buttons, only one can be selected-->
+                <div class="dropdown">
+                    <select name="get-in" id="get-in" required>
+                        <option disabled selected value="base"> -- select -- </option>
+                        <option value="Accepted">Accepted</option>
+                        <option value="Rejected">Rejected</option>
+                    </select>
+                </div>
             </div>
-        </div>
 
-        <br>
-        <br>
+            <br>
+            <br>
 
-        <!-- Popup thanking user for submitting details, sends them back to home page -->
-        <div class="popupContainer">
-            <button type="submit" class="btn" onclick="openPopup()" id="insert-input">Submit</button>
-            <div class="popup" id="popup">
-                <img id="popup img" src="../images/Tick.png" alt="Tick">
-                <h2>Thank You!</h2>
-                <p>Your details have been successfully submitted. Thanks!</p>
-                <button type="button" onclick="goToHomePage('home.html')">OK</button>
+            <!-- Popup thanking user for submitting details, sends them back to home page, onclick="openPopup()" -->
+            <div class="popupContainer">
+                <button type="submit" class="btn" id="insert-input">Submit</button>
+                <div class="popup" id="popup">
+                    <img id="popup img" src="../images/Tick.png" alt="Tick">
+                    <h2>Thank You!</h2>
+                    <p>Your details have been successfully submitted. Thanks!</p>
+                    <button type="button" onclick="goToHomePage('home.html')">OK</button>
+                </div>
             </div>
-        </div>
+
+        </form>
 
     </div>
 </body>
