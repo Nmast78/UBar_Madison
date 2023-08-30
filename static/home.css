@@ -79,7 +79,7 @@ img {
 /* Sectional text to the right of bar logos */    
 .text-container {
     padding-top: 20px;
-    padd
+    padding-bottom: 5px;
     line-height: 3pt;
     font-family: 'Times New Roman', Times, serif;
     font-size: 14px;
