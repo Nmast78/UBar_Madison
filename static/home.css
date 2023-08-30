@@ -79,6 +79,7 @@ img {
 /* Sectional text to the right of bar logos */    
 .text-container {
     padding-top: 20px;
+    padd
     line-height: 3pt;
     font-family: 'Times New Roman', Times, serif;
     font-size: 14px;
@@ -88,8 +89,7 @@ img {
 /* Acceptance percentage text */    
 .graph-text-container {
     color: green;
-    font-size: 15px;
-    padding-left: 260px;
+    font-size: 20px;
 }
 
 /* Current waiting time text */    
