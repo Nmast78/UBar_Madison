@@ -8,7 +8,7 @@ function goToHomePage(url) {
     window.location.href = "home.html"
 }
 
-
+// Function to check if users have selected values from dropdowns before they submit
 function validate() {
     var bar_name = document.getElementById("bars");
     if(bar_name.selectedIndex <= 0) {
