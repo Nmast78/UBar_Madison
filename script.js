@@ -29,12 +29,9 @@ function updateTimeSlider() {
     const waitMinutesElement = document.getElementById("wait-minutes");
     const sliderElement = document.getElementById("myRange");
 
-    // Add an event listener to the slider to update the wait time text
-    sliderElement.addEventListener("input", function () {
         // Get the selected time interval from the slider's value
         const selectedTime = sliderElement.value;
 
         // Update the text content of the waitMinutesElement
         waitMinutesElement.textContent = selectedTime === "0" ? "0" : selectedTime;
-    });
 }
