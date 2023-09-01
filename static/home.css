@@ -115,7 +115,7 @@ footer {
 
 .footerContainer {
     width: 100%;
-    padding: 10px 10px 10px;
+    padding: 10px 5px 10px;
 }
 
 .socialIcons {
@@ -127,13 +127,13 @@ footer {
     text-decoration: none;
     padding: 10px;
     background-color: white;
-    margin: 10px;
+    margin: 10px 20px 10px 15px;
 }
 
 .socialIcons a i {
     font-size: 2em;
     color: #111;
-    opacity: p;
+    opacity: 1;
 }
 .socialIcons a:hover i {
     color: white;
