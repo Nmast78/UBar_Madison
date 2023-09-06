@@ -26,7 +26,7 @@
         <button onclick="goToHomePage('home.html')" id="back_button">Cancel</button>
     </div>
 
-    <form id="inputForm" method="POST">
+    <form id="inputForm" method="POST" name="inputForm">
         <div class="add-input">
             <div>
                 <p class="text">What bar did you visit?</p>
@@ -84,11 +84,37 @@
                     <img id="popup img" src="../images/Tick.png" alt="Tick">
                     <h2>Thank You!</h2>
                     <p>Your details have been successfully submitted. Thanks!</p>
-                    <button type="button" onclick="goToHomePage('home.html')">OK</button>
+                    <button type="submit" onclick="goToHomePage('home.html')">OK</button>
                 </div>
             </div>
 
         </div>
     </form>
+
+    <script>
+
+        $(function(){
+            $("#inputForm").on("submit", function(event) {
+                event.preventDefault();
+
+                var formData = {
+                    'bar': $('input[name=bars]').val(), 
+                    'time': $('input[name=slider]').val(), 
+                    'accepted': $('input[name=get-in]').val()
+                };
+                console.log(formData);
+
+                $.ajax({
+                    url: "../userInput.php",
+                    type: "POST",
+                    data: formData,
+                    success: function(d) {
+                        alert(d);
+                    }
+                });
+            });
+        }) 
+
+    </script>
 </body>
 </html>
