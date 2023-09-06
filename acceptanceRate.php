@@ -13,10 +13,13 @@
     $sql = "CALL `calcPercent`()";
     $result = mysqli_query($conn, $sql);
 
-    // Parse data and get the average wait time, else total = 0
+    // Parse data and get the percentages for each bar, if null set to 100%
     if(mysqli_num_rows($result) > 0) {
         while($row = mysqli_fetch_assoc($result)) {
             $percent = $row['percentage'];
+            if($percent == null) {
+                $percent = 100;
+            }
             array_push($acceptRate, $percent);
         }
     } else {
