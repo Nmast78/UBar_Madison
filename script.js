@@ -10,6 +10,7 @@ function goToHomePage(url) {
 
 // Function to check if users have selected values from dropdowns before they submit
 function validate() {
+    event.preventDefault(); 
     var bar_name = document.getElementById("bars");
     if(bar_name.selectedIndex <= 0) {
         alert("Please Select a Bar");
@@ -29,9 +30,9 @@ function updateTimeSlider() {
     const waitMinutesElement = document.getElementById("wait-minutes");
     const sliderElement = document.getElementById("myRange");
 
-        // Get the selected time interval from the slider's value
-        const selectedTime = sliderElement.value;
+    // Get the selected time interval from the slider's value
+    const selectedTime = sliderElement.value;
 
-        // Update the text content of the waitMinutesElement
-        waitMinutesElement.textContent = selectedTime === "0" ? "0" : selectedTime;
+    // Update the text content of the waitMinutesElement
+    waitMinutesElement.textContent = (selectedTime === "60") ? "60+" : selectedTime;
 }
