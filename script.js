@@ -30,9 +30,9 @@ function updateTimeSlider() {
     const waitMinutesElement = document.getElementById("wait-minutes");
     const sliderElement = document.getElementById("myRange");
 
-        // Get the selected time interval from the slider's value
-        const selectedTime = sliderElement.value;
+    // Get the selected time interval from the slider's value
+    const selectedTime = sliderElement.value;
 
-        // Update the text content of the waitMinutesElement
-        waitMinutesElement.textContent = selectedTime === "0" ? "0" : selectedTime;
+    // Update the text content of the waitMinutesElement
+    waitMinutesElement.textContent = (selectedTime === "60") ? "60+" : selectedTime;
 }
