@@ -10,6 +10,7 @@ function goToHomePage(url) {
 
 // Function to check if users have selected values from dropdowns before they submit
 function validate() {
+    event.preventDefault(); 
     var bar_name = document.getElementById("bars");
     if(bar_name.selectedIndex <= 0) {
         alert("Please Select a Bar");
