@@ -85,7 +85,7 @@
         </div>
         
         <!-- Bar Graph -->
-        <label class="graph-text-container" id="churchKeyAccept">--</label>
+        <label class="graph-text-container" id="churchkeyAccept">--</label>
         <label class="graph-text-container" id="accepted">% Accepted</label>
 
         <br>
@@ -178,7 +178,7 @@
         </div>
             
         <!-- Bar Graph -->
-        <label class="graph-text-container" id="luckysAccept">--</label>
+        <label class="graph-text-container" id="lucksAccept">--</label>
         <label class="graph-text-container" id="accepted">% Accepted</label>
 
         <br>
@@ -271,7 +271,7 @@
         </div>
             
         <!-- Bar Graph -->
-        <label class="graph-text-container" id="doubleUAccepted">--</label>
+        <label class="graph-text-container" id="doubleuAccepted">--</label>
         <label class="graph-text-container" id="accepted">% Accepted</label>
 
         <br>
@@ -363,7 +363,7 @@
         </div>
         
         <!-- Bar Graph -->
-        <label class="graph-text-container" id="whiskeyjacksAccept">--</label>
+        <label class="graph-text-container" id="whiskeyJacksAccept">--</label>
         <label class="graph-text-container" id="accepted">% Accepted</label>
 
         <br>
@@ -414,6 +414,28 @@
                     $('#kollegeKlubTime').text(ans[8]);
                     $('#wandosTime').text(ans[9]);
                     $('#WhiskeyJacksTime').text(ans[10]);
+                }
+            });
+        });
+
+        $(document).ready(function() {
+            $.ajax({
+                type: "GET", 
+                url: "../acceptanceRate.php", 
+                dataType: "html", 
+                success: function(data) {
+                    var ans = jQuery.parseJSON(data)
+                    $('#chasersAccept').text(ans[0]);
+                    $('#churchkeyAccept').text(ans[1]);
+                    $('#cityAccept').text(ans[2]);
+                    $('#dannysAccept').text(ans[3]);
+                    $('#lucksAccept').text(ans[4]);
+                    $('#sconniesAccept').text(ans[5]);
+                    $('#bratsAccept').text(ans[6]);
+                    $('#doubleuAccept').text(ans[7]);
+                    $('#kollegeKlubAccept').text(ans[8]);
+                    $('#wandosAccept').text(ans[9]);
+                    $('#WhiskeyJacksAccept').text(ans[10]);
                 }
             });
         });
