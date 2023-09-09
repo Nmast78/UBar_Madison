@@ -8,8 +8,8 @@
     $conn = new mysqli($host, $dbUsername, $dbPassword, $dbName);
 
     // Set variables to work with data
-    $arrayBars = array("chasers_2","churchkey_bar_and_grill","city_bar","danny's_pub","lucky's_1313_brew_pub","sconnie_bar","state_street_brats","the_double_u",
-                       "the_kollege_klub","wando's_bar_and_grill","whiskey_jack's_saloon");
+    $arrayBars = array("chasers_2","churchkey_bar_and_grill","city_bar","danny's_pub","lucky's_1313_brew_pub","sconnie_bar",
+                       "state_street_brats","the_double_u", "the_kollege_klub","wando's_bar_and_grill","whiskey_jack's_saloon");
     $wait_times = array();
 
     // For each bar average data and send to screen

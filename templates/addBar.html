@@ -38,14 +38,13 @@
                         <option value="Churchkey Bar and Grill">Churchkey Bar and Grill</option>
                         <option value="City Bar">City Bar</option>
                         <option value="Danny's Pub">Danny's Pub</option>
-                        <option value="Jordan's Big Ten Pub">Jordan's Big Ten Pub</option>
                         <option value="Lucky's 1313 Brew Pub">Lucky's 1313 Brew Pub</option>
-                        <option value="Monday's Bar">Monday's Bar</option>
                         <option value="Sconnie Bar">Sconnie Bar</option>
+                        <option value="State Street Brats">State Street Brats</option>
                         <option value="The Double U">The Double U</option>
                         <option value="The Kollege Klub">The Kollege Klub</option>
-                        <option value="State Street Brats">State Street Brats</option>
                         <option value="Wando's Bar and Grill">Wando's Bar and Grill</option>
+                        <option value="Whiskey Jack's Saloon">Whiskey Jack's Saloon</option>
                     </select>
                 </div>
             </div>
@@ -58,7 +57,7 @@
                 </div>
                 <!--Slider bar with times in 5 minute intervals-->
                 <div class="slidecontainer">
-                    <input name="slider" type="range" min="0" max="60" value="0" step="5" class="slider" id="myRange" onclick="updateTimeSlider()">
+                    <input name="slider" type="range" min="0" max="60" value="0" step="5" class="slider" id="slider" onclick="updateTimeSlider()">
                 </div>
             </div>
 
@@ -97,19 +96,20 @@
             $("#inputForm").on("submit", function(event) {
                 event.preventDefault();
 
-                var formData = {
-                    'bar': $('input[name=bars]').val(), 
-                    'time': $('input[name=slider]').val(), 
-                    'accepted': $('input[name=get-in]').val()
-                };
-                console.log(formData);
+                var bar = $("#bars").val();
+                var time = document.getElementById("slider").value;
+                var accepted = $("#get-in").val();
 
                 $.ajax({
                     url: "../userInput.php",
                     type: "POST",
-                    data: formData,
-                    success: function(d) {
-                        alert(d);
+                    data: {
+                        bar: bar, 
+                        time: time, 
+                        accepted: accepted
+                    },
+                    success: function(data) {
+                        alert(data);
                     }
                 });
             });

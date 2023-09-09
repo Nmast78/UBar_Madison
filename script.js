@@ -28,7 +28,7 @@ function openPopup() {
 // Function that updates amount of minutes as user drags time slider
 function updateTimeSlider() {
     const waitMinutesElement = document.getElementById("wait-minutes");
-    const sliderElement = document.getElementById("myRange");
+    const sliderElement = document.getElementById("slider");
 
     // Get the selected time interval from the slider's value
     const selectedTime = sliderElement.value;
