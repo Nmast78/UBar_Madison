@@ -12,8 +12,11 @@ function goToHomePage(url) {
 function validate() {
     event.preventDefault(); 
     var bar_name = document.getElementById("bars");
+    var accepted = document.getElementById("get-in");
     if(bar_name.selectedIndex <= 0) {
         alert("Please Select a Bar");
+    } else if(accepted.selectedIndex <= 0) {
+        alert("Please Select if you were Accepted or Rejected");
     } else {
         openPopup();
     }
