@@ -399,7 +399,7 @@
         $(document).ready(function() {
             $.ajax({
                 type: "GET", 
-                url: "../waitTime.php", 
+                url: "../dynamics/waitTime.php", 
                 dataType: "html", 
                 success: function(data) {
                     var ans = jQuery.parseJSON(data)
@@ -421,7 +421,7 @@
         $(document).ready(function() {
             $.ajax({
                 type: "GET", 
-                url: "../acceptanceRate.php", 
+                url: "../dynamics/acceptanceRate.php", 
                 dataType: "html", 
                 success: function(data) {
                     var ans = jQuery.parseJSON(data)
