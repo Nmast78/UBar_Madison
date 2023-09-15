@@ -101,8 +101,9 @@
                 var accepted = $("#get-in").val();
 
                 $.ajax({
-                    url: "../userInput.php",
+                    url: "../dynamics/userInput.php",
                     type: "POST",
+                    dataType: "html",
                     data: {
                         bar: bar, 
                         time: time, 

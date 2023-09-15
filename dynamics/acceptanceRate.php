@@ -27,6 +27,7 @@
         array_push($wait_times, $total);
     }
 
+    $conn->close();
     echo json_encode($acceptRate);
 
 ?>
