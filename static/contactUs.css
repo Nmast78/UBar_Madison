@@ -64,7 +64,14 @@
 }
 
 /* Footer CSS */
+.page-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 footer {
+    margin-top: auto;
     background-color: rgb(59, 59, 59);
 }
 
