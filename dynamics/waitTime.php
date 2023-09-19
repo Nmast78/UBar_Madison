@@ -1,4 +1,16 @@
 <?php
+    include 'averageWaitTime.php';
+
+    // Get rounded time 1 hour behind Madison Time
+    date_default_timezone_set('America/Denver');
+    $seconds = time();
+    $rounded_seconds = round($seconds / (30 * 60)) * (30 * 60);
+    $rounded_time = date('h:i:s', $rounded_seconds);
+
+    // Get current time not rounded
+    date_default_timezone_set('America/Chicago');
+    $seconds = time();
+    $current_time = date('h:i:s', $seconds);
 
     // Connect to database
     $host = "srv766.hstgr.io";
@@ -14,11 +26,18 @@
 
     // For each bar average data and send to screen
     foreach($arrayBars as $element) {
+        // Set variables we will need
         $total = 0;
         $counter = 0;
 
+        // Call PHP script to get closest estimated wait time and store it in $estimatedTime
+        $estimatedTime = getAvgTime($element);
+        if($estimatedTime != 0) {
+            $counter = 1;
+        }
+        
         // SQL Statement and query
-        $sql = "SELECT * FROM `$element`";
+        $sql = "SELECT * FROM `$element` WHERE `day_time` BETWEEN '$rounded_time' AND '$current_time'";
         $result = mysqli_query($conn, $sql);
 
         // Parse data and get the average wait time, else total = 0
@@ -27,7 +46,7 @@
                 $total += $row['wait_time'];
                 $counter += 1;
             }
-            $total = ceil($total / $counter);
+            $total = ceil(($total + $estimatedTime) / $counter);
             array_push($wait_times, $total);
         } else {
             $total = 0;
