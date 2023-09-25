@@ -33,11 +33,6 @@ function updateTimeSlider() {
     const waitMinutesElement = document.getElementById("wait-minutes");
     const sliderElement = document.getElementById("slider");
 
-    // Add event listeners to handle both mouse and touch events
-    sliderElement.addEventListener("input", updateTimeSlider);
-    sliderElement.addEventListener("touchmove", updateTimeSlider);
-    sliderElement.addEventListener("touchend", updateTimeSlider);
-
     // Get the selected time interval from the slider's value
     const selectedTime = sliderElement.value;
 
