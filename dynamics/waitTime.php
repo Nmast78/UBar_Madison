@@ -28,13 +28,10 @@
     foreach($arrayBars as $element) {
         // Set variables we will need
         $total = 0;
-        $counter = 0;
+        $counter = 1;
 
         // Call PHP script to get closest estimated wait time and store it in $estimatedTime
         $estimatedTime = getAvgTime($element);
-        if($estimatedTime != 0) {
-            $counter = 1;
-        }
         
         // SQL Statement and query
         $sql = "SELECT * FROM `$element` WHERE `day_time` BETWEEN '$rounded_time' AND '$current_time'";
@@ -50,6 +47,7 @@
             array_push($wait_times, $total);
         } else {
             $total = 0;
+            $total = ceil(($total + $estimatedTime) / $counter);
             array_push($wait_times, $total);
         }
     }

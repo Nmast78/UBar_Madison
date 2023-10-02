@@ -8,7 +8,7 @@
         $day = date('l', $timestamp);
 
         //Test
-        //$day = 'Friday';
+        //$day = 'Saturday';
 
         // Get the current time rounded to the nearest half-hour and store it in $rounded_time
         $seconds = time();
