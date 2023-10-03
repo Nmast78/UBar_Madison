@@ -24,8 +24,13 @@ function validate() {
 
 // Function to open popup after user adds bar experience
 function openPopup() {
-    let popup = document.getElementById("popup");
-    popup.classList.add("open-popup")
+    const delayTime = 1000;
+
+    setTimeout(function() {
+        let popup = document.getElementById("popup");
+        popup.classList.add("open-popup")
+    }, delayTime); // Adjust the delay time as needed
+
 }
 
 // Function that updates amount of minutes as user drags time slider
