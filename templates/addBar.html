@@ -50,14 +50,25 @@
             </div>
 
             <div>
-                <p class="text">How long was your wait time?</p>
-                <div class="wait-time-text">
-                    <p id="wait-minutes">0</p>
-                    <p id="minutes">minutes</p>
-                </div>
-                <!--Slider bar with times in 5 minute intervals-->
-                <div class="slidecontainer">
-                    <input name="slider" type="range" min="0" max="60" value="0" step="5" class="slider" id="slider" onclick="updateTimeSlider()">
+                <p class="text">How long did you wait in line?</p>
+                <!--Accepted and rejected buttons, only one can be selected-->
+                <div class="dropdown">
+                    <select name="wait-time" id="wait-time" required>
+                        <option selected hidden value="base"> -- select -- </option>
+                        <option value="0">0 minutes</option>
+                        <option value="5">5 minutes</option>
+                        <option value="10">10 minutes</option>
+                        <option value="15">15 minutes</option>
+                        <option value="20">20 minutes</option>
+                        <option value="25">25 minutes</option>
+                        <option value="30">30 minutes</option>
+                        <option value="35">35 minutes</option>
+                        <option value="40">40 minutes</option>
+                        <option value="45">45 minutes</option>
+                        <option value="50">50 minutes</option>
+                        <option value="55">55 minutes</option>
+                        <option value="60">60 minutes</option>
+                    </select>
                 </div>
             </div>
 
@@ -97,7 +108,7 @@
                 event.preventDefault();
 
                 var bar = $("#bars").val();
-                var time = document.getElementById("slider").value;
+                var time = $("#wait-time").val();
                 var accepted = $("#get-in").val();
 
                 $.ajax({

@@ -105,6 +105,16 @@ text-align: center;
     padding-left: 20px;
 }
 
+/* Drop down for accepted or rejected */
+#wait-time {
+    width: 30%;
+    height: 40px;
+    font-size: 15px;
+    text-align: center;
+    background-color: rgb(192, 190, 190);
+    border-radius: 5px;
+}
+
 
 /* Drop down for accepted or rejected */
 #get-in {
