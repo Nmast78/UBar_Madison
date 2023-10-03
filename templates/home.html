@@ -14,7 +14,7 @@
     <!-- Header containing logo, name, and horizontal line -->
     <header>
         <div class="header-content">
-            <img id="logo" src="../images/Capital.png" alt="Capitol">
+            <img id="mainLogo" src="../images/Ubar.png" alt="UBar" class="image-large">
             <div class="head-text">
                 <p id="UBar">UBar-</p>
                 <p id="Madison">&nbsp;Madison</p>
@@ -32,6 +32,8 @@
     </div>
 
     <br>
+    <hr class="light-break">
+
 
     <!-- List containing most popular bars, hardcoded for now -->
     <div class="section-content">
@@ -43,7 +45,25 @@
         </div>
         
         <!-- Bar Graph -->
-        <p class="graph-text-container">"30%" Accepted</p>
+        <label class="graph-text-container" id="chasersAccept">--</label>
+        <label class="graph-text-container" id="accepted">% Accepted</label>
+
+        <br>
+        <br>
+
+        <div class="acceptance-bar-container">
+            <div class="acceptance-bar">
+                <div class="denied" style="width: 84%;"></div>
+              <div class="accepted" style="width: 40%;"></div>
+
+              <!-- <div class="denied" style="width: <?php echo $deniedPercentage; ?>%;"></div>
+              <div class="accepted" style="width: <?php echo $acceptedPercentage; ?>%;"></div> -->
+
+            </div>
+          </div>
+
+        <br>
+        <br>
 
         <!-- Wait time -->
         <span class="text-container">Wait Time:</span>
@@ -61,7 +81,21 @@
         </div>
         
         <!-- Bar Graph -->
-        <p class="graph-text-container">"60%" Accepted</p>
+        <label class="graph-text-container" id="churchkeyAccept">--</label>
+        <label class="graph-text-container" id="accepted">% Accepted</label>
+
+        <br>
+        <br>
+
+        <div class="acceptance-bar-container">
+            <div class="acceptance-bar">
+                <div class="denied" style="width: 84%;"></div>
+              <div class="accepted" style="width: 70%;"></div>
+            </div>
+          </div>
+
+        <br>
+        <br>
 
         <!-- Wait time -->
         <span class="text-container">Wait Time:</span>
@@ -79,7 +113,22 @@
         </div>
         
         <!-- Bar Graph -->
-        <p class="graph-text-container">"50%" Accepted</p>
+        <label class="graph-text-container" id="cityAccept">--</label>
+        <label class="graph-text-container" id="accepted">% Accepted</label>
+
+        <br>
+        <br>
+
+        <div class="acceptance-bar-container">
+            <div class="acceptance-bar">
+                <div class="denied" style="width: 84%;"></div>
+              <div class="accepted" style="width: 60%;"></div>
+            </div>
+          </div>
+
+        <br>
+        <br>
+
 
         <!-- Wait time -->
         <span class="text-container">Wait Time:</span>
@@ -97,26 +146,23 @@
         </div>
             
         <!-- Bar Graph -->
-        <p class="graph-text-container">"55%" Accepted</p>
-    
-        <!-- Wait time -->
-        <span class="text-container">Wait Time:</span>
-        <span class="time-text-container">"35" minutes</span>    
-    </div>
+        <label class="graph-text-container" id="dannysAccept">--</label>
+        <label class="graph-text-container" id="accepted">% Accepted</label>
 
-    <hr class="light-break">
+        <br>
+        <br>
 
-    <div class="section-content">
-        <img id="logo" src="../images/Jordans.png" alt="Jordans">
-        <div class="text-container">
-            <p>Jordan's Big Ten Pub</p> 
-            <p>1330 Regent St, Madison, WI 53715</p><br >
-            <p>Accepted or Denied?</p><br >
-        </div>
-            
-        <!-- Bar Graph -->
-        <p class="graph-text-container">"95%" Accepted</p>
-    
+        <div class="acceptance-bar-container">
+            <div class="acceptance-bar">
+                <div class="denied" style="width: 84%;"></div>
+              <div class="accepted" style="width: 54%;"></div>
+            </div>
+          </div>
+
+        <br>
+        <br>
+
+
         <!-- Wait time -->
         <span class="text-container">Wait Time:</span>
         <span class="time-text-container">"5" minutes</span>    
@@ -133,26 +179,23 @@
         </div>
             
         <!-- Bar Graph -->
-        <p class="graph-text-container">"85%" Accepted</p>
-    
-        <!-- Wait time -->
-        <span class="text-container">Wait Time:</span>
-        <span class="time-text-container">"15" minutes</span>    
-    </div>
+        <label class="graph-text-container" id="lucksAccept">--</label>
+        <label class="graph-text-container" id="accepted">% Accepted</label>
 
-    <hr class="light-break">
+        <br>
+        <br>
 
-    <div class="section-content">
-        <img id="logo" src="../images/Mondays.png" alt="Mondays">
-        <div class="text-container">
-            <p>Monday's Bar</p> 
-            <p>523 State St, Madison, WI 53703</p><br >
-            <p>Accepted or Denied?</p><br >
-        </div>
-            
-        <!-- Bar Graph -->
-        <p class="graph-text-container">"25%" Accepted</p>
-    
+        <div class="acceptance-bar-container">
+            <div class="acceptance-bar">
+                <div class="denied" style="width: 84%;"></div>
+              <div class="accepted" style="width: 75%;"></div>
+            </div>
+          </div>
+
+        <br>
+        <br>
+
+
         <!-- Wait time -->
         <span class="text-container">Wait Time:</span>
         <span class="time-text-container">"35" minutes</span>    
@@ -169,7 +212,22 @@
         </div>
         
         <!-- Bar Graph -->
-        <p class="graph-text-container">"90%" Accepted</p>
+        <label class="graph-text-container" id="sconniesAccept">--</label>
+        <label class="graph-text-container" id="accepted">% Accepted</label>
+
+        <br>
+        <br>
+
+        <div class="acceptance-bar-container">
+            <div class="acceptance-bar">
+                <div class="denied" style="width: 84%;"></div>
+              <div class="accepted" style="width: 80%;"></div>
+            </div>
+          </div>
+
+        <br>
+        <br>
+
 
         <!-- Wait time -->
         <span class="text-container">Wait Time:</span>
@@ -187,7 +245,21 @@
         </div>
         
         <!-- Bar Graph -->
-        <p class="graph-text-container">"70%" Accepted</p>
+        <label class="graph-text-container" id="bratsAccept">--</label>
+        <label class="graph-text-container" id="accepted">% Accepted</label>
+
+        <br>
+        <br>
+
+        <div class="acceptance-bar-container">
+            <div class="acceptance-bar">
+                <div class="denied" style="width: 84%;"></div>
+              <div class="accepted" style="width: 45%;"></div>
+            </div>
+          </div>
+
+        <br>
+        <br>
 
         <!-- Wait time -->
         <span class="text-container">Wait Time:</span>
@@ -205,8 +277,22 @@
         </div>
             
         <!-- Bar Graph -->
-        <p class="graph-text-container">"15%" Accepted</p>
-    
+        <label class="graph-text-container" id="doubleuAccept">--</label>
+        <label class="graph-text-container" id="accepted">% Accepted</label>
+
+        <br>
+        <br>
+
+        <div class="acceptance-bar-container">
+            <div class="acceptance-bar">
+                <div class="denied" style="width: 84%;"></div>
+              <div class="accepted" style="width: 25%;"></div>
+            </div>
+          </div>
+
+        <br>
+        <br>
+
         <!-- Wait time -->
         <span class="text-container">Wait Time:</span>
         <span class="time-text-container">"45" minutes</span>    
@@ -222,9 +308,22 @@
             <p>Accepted or Denied?</p><br >
         </div>
             
-        <!-- Bar Graph -->
-        <p class="graph-text-container">"25%" Accepted</p>
-    
+        <label class="graph-text-container" id="kollegeKlubAccept">--</label>
+        <label class="graph-text-container" id="accepted">% Accepted</label>
+
+        <br>
+        <br>
+
+        <div class="acceptance-bar-container">
+            <div class="acceptance-bar">
+                <div class="denied" style="width: 84%;"></div>
+              <div class="accepted" style="width: 20%;"></div>
+            </div>
+          </div>
+
+        <br>
+        <br>
+
         <!-- Wait time -->
         <span class="text-container">Wait Time:</span>
         <span class="time-text-container">"45" minutes</span>    
@@ -241,7 +340,21 @@
         </div>
         
         <!-- Bar Graph -->
-        <p class="graph-text-container">"40%" Accepted</p>
+        <label class="graph-text-container" id="wandosAccept">--</label>
+        <label class="graph-text-container" id="accepted">% Accepted</label>
+
+        <br>
+        <br>
+
+        <div class="acceptance-bar-container">
+            <div class="acceptance-bar">
+                <div class="denied" style="width: 84%;"></div>
+              <div class="accepted" style="width: 42%;"></div>
+            </div>
+          </div>
+
+        <br>
+        <br>
 
         <!-- Wait time -->
         <span class="text-container">Wait Time:</span>
@@ -259,7 +372,21 @@
         </div>
         
         <!-- Bar Graph -->
-        <p class="graph-text-container">"10%" Accepted</p>
+        <label class="graph-text-container" id="WhiskeyJacksAccept">--</label>
+        <label class="graph-text-container" id="accepted">% Accepted</label>
+
+        <br>
+        <br>
+
+        <div class="acceptance-bar-container">
+            <div class="acceptance-bar">
+                <div class="denied" style="width: 84%;"></div>
+              <div class="accepted" style="width: 30%;"></div>
+            </div>
+          </div>
+
+        <br>
+        <br>
 
         <!-- Wait time -->
         <span class="text-container">Wait Time:</span>

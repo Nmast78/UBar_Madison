@@ -24,41 +24,51 @@
         <button onclick="goToHomePage('home.html')" id="back_button">Cancel</button>
     </div>
 
-    <div class="add-input">
-        
+    <form id="inputForm" method="POST" name="inputForm">
+        <div class="add-input">
+            <div>
+                <p class="text">What bar did you visit?</p>
+                <!--Drop down menu with all of the bars-->
+                <div class="dropdown">
+                    <select name="bars" id="bars" required>
+                        <option selected hidden value="base"> -- select an option -- </option>
+                        <option value="Chaser's 2.0">Chaser's 2.0</option>
+                        <option value="Churchkey Bar and Grill">Churchkey Bar and Grill</option>
+                        <option value="City Bar">City Bar</option>
+                        <option value="Danny's Pub">Danny's Pub</option>
+                        <option value="Lucky's 1313 Brew Pub">Lucky's 1313 Brew Pub</option>
+                        <option value="Sconnie Bar">Sconnie Bar</option>
+                        <option value="State Street Brats">State Street Brats</option>
+                        <option value="The Double U">The Double U</option>
+                        <option value="The Kollege Klub">The Kollege Klub</option>
+                        <option value="Wando's Bar and Grill">Wando's Bar and Grill</option>
+                        <option value="Whiskey Jack's Saloon">Whiskey Jack's Saloon</option>
+                    </select>
+                </div>
+            </div>
 
-        <div>
-            <p class="text">What bar did you visit?</p>
-            <!--Drop down menu with all of the bars-->
-            <div class="dropdown">
-                <select name="bars" id="bars" required>
-                    <option value="Chaser's 2.0">Chaser's 2.0</option>
-                    <option value="Churchkey Bar and Grill">Churchkey Bar and Grill</option>
-                    <option value="City Bar">City Bar</option>
-                    <option value="Danny's Pub">Danny's Pub</option>
-                    <option value="Jordan's Big Ten Pub">Jordan's Big Ten Pub</option>
-                    <option value="Lucky's 1313 Brew Pub">Lucky's 1313 Brew Pub</option>
-                    <option value="Monday's Bar">Monday's Bar</option>
-                    <option value="Sconnie Bar">Sconnie Bar</option>
-                    <option value="The Double U">The Double U</option>
-                    <option value="The Kollege Klub">The Kollege Klub</option>
-                    <option value="State Street Brats">State Street Brats</option>
-                    <option value="Wando's Bar and Grill">Wando's Bar and Grill</option>
-                </select>
+            <div>
+                <p class="text">How long did you wait in line?</p>
+                <!--Accepted and rejected buttons, only one can be selected-->
+                <div class="dropdown">
+                    <select name="wait-time" id="wait-time" required>
+                        <option selected hidden value="base"> -- select -- </option>
+                        <option value="0">0 minutes</option>
+                        <option value="5">5 minutes</option>
+                        <option value="10">10 minutes</option>
+                        <option value="15">15 minutes</option>
+                        <option value="20">20 minutes</option>
+                        <option value="25">25 minutes</option>
+                        <option value="30">30 minutes</option>
+                        <option value="35">35 minutes</option>
+                        <option value="40">40 minutes</option>
+                        <option value="45">45 minutes</option>
+                        <option value="50">50 minutes</option>
+                        <option value="55">55 minutes</option>
+                        <option value="60">60+ minutes</option>
+                    </select>
+                </div>
             </div>
-        </div>
-          
-        <div>
-            <p class="text">How long was your wait time?</p>
-            <div class="wait-time-text">
-                <p id="wait-minutes">0</p>
-                <p id="minutes">minutes</p>
-            </div>
-            <!--Slider bar with times in 5 minute intervals-->
-            <div class="slidecontainer">
-                <input type="range" min="0" max="60" value="0" step="5" class="slider" id="myRange">
-            </div>
-        </div>
 
         <div>
             <p class="text">Did you get accepted or rejected?</p>
