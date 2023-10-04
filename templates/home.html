@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UBar</title>
     <script src="../script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="shortcut icon" href="#">
     <link rel="stylesheet" href="../static/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,7 +16,7 @@
     <!-- Header containing logo, name, and horizontal line -->
     <header>
         <div class="header-content">
-            <img id="mainLogo" src="../images/Ubar.png" alt="UBar" class="image-large">
+            <img id="logo" src="../images/Capital.png" alt="Capitol" class="image-large">
             <div class="head-text">
                 <p id="UBar">UBar-</p>
                 <p id="Madison">&nbsp;Madison</p>
@@ -32,17 +34,24 @@
     </div>
 
     <br>
-    <hr class="light-break">
-
 
     <!-- List containing most popular bars, hardcoded for now -->
     <div class="section-content">
-        <img id="logo" src="../images/Chasers.png" alt="Chasers">
+        <img id="logo" src="../images/Chasers.png" alt="Chasers" class="image-large">
         <div class="text-container">
-            <p>Chasers 2.0</p> 
-            <p>408 W Gorham St, Madison, WI, 53703</p><br >
-            <p>Accepted or Denied?</p><br >
+            <p>Chasers 2.0 &emsp; 4.2 &nbsp;
+                <span style="display: inline-block;"> 
+                <img id="star" src="../images/RedStar.png" alt="RedStar" class="image-small">
+                <img id="star" src="../images/RedStar.png" alt="RedStar" class="image-small">
+                <img id="star" src="../images/RedStar.png" alt="RedStar" class="image-small">
+                <img id="star" src="../images/RedStar.png" alt="RedStar" class="image-small"> 
+                <img id="star" src="../images/GrayStar.png" alt="GrayStar" class="image-small">
+                </span>
+            </p>
+            <p>408 W Gorham St, Madison, WI, 53703</p><br>
+            <p>Accepted or Denied?</p><br>
         </div>
+    </div>
         
         <!-- Bar Graph -->
         <label class="graph-text-container" id="chasersAccept">--</label>
@@ -51,31 +60,26 @@
         <br>
         <br>
 
-        <div class="acceptance-bar-container">
-            <div class="acceptance-bar">
-                <div class="denied" style="width: 84%;"></div>
-              <div class="accepted" style="width: 40%;"></div>
-
-              <!-- <div class="denied" style="width: <?php echo $deniedPercentage; ?>%;"></div>
-              <div class="accepted" style="width: <?php echo $acceptedPercentage; ?>%;"></div> -->
-
-            </div>
-          </div>
-
-        <br>
-        <br>
-
         <!-- Wait time -->
-        <span class="text-container">Wait Time:</span>
-        <span class="time-text-container">"50" minutes</span>    
+        <label class="text-container">Wait Time: </label>
+        <label class="time-text-container" id="chasersTime" >--</label>
+        <label class="time-text-container"> minutes</label>    
     </div>
 
     <hr class="light-break">
 
     <div class="section-content">
-        <img id="logo" src="../images/Churchkey.png" alt="Churchkey">
+        <img id="logo" src="../images/Churchkey.png" alt="Churchkey" class="image-large">
         <div class="text-container">
-            <p>Churchkey Bar and Grill</p> 
+            <p>Churchkey Bar and Grill &emsp; 4.1 &nbsp;
+                <span style="display: inline-block;"> 
+                <img id="star" src="../images/RedStar.png" alt="RedStar" class="image-small">
+                <img id="star" src="../images/RedStar.png" alt="RedStar" class="image-small">
+                <img id="star" src="../images/RedStar.png" alt="RedStar" class="image-small">
+                <img id="star" src="../images/RedStar.png" alt="RedStar" class="image-small"> 
+                <img id="star" src="../images/GrayStar.png" alt="GrayStar" class="image-small">
+                </span>
+            </p>
             <p>626 University Ave, Madison, WI, 53715</p><br >
             <p>Accepted or Denied?</p><br >
         </div>
@@ -87,27 +91,26 @@
         <br>
         <br>
 
-        <div class="acceptance-bar-container">
-            <div class="acceptance-bar">
-                <div class="denied" style="width: 84%;"></div>
-              <div class="accepted" style="width: 70%;"></div>
-            </div>
-          </div>
-
-        <br>
-        <br>
-
         <!-- Wait time -->
-        <span class="text-container">Wait Time:</span>
-        <span class="time-text-container">"45" minutes</span>   
+        <label class="text-container">Wait Time: </label>
+        <label class="time-text-container" id="churchkeyTime" >--</label>
+        <label class="time-text-container"> minutes</label>     
     </div>
 
     <hr class="light-break">
 
     <div class="section-content">
-        <img id="logo" src="../images/City.png" alt="City">
+        <img id="logo" src="../images/City.png" alt="City" class="image-large">
         <div class="text-container">
-            <p>City Bar</p> 
+            <p>City Bar &emsp; 4.1 &nbsp;
+                <span style="display: inline-block;"> 
+                <img id="star" src="../images/RedStar.png" alt="RedStar" class="image-small">
+                <img id="star" src="../images/RedStar.png" alt="RedStar" class="image-small">
+                <img id="star" src="../images/RedStar.png" alt="RedStar" class="image-small">
+                <img id="star" src="../images/RedStar.png" alt="RedStar" class="image-small"> 
+                <img id="star" src="../images/GrayStar.png" alt="GrayStar" class="image-small">
+                </span>
+            </p> 
             <p>636 State St, Madison, WI, 53703</p><br >
             <p>Accepted or Denied?</p><br >
         </div>
@@ -119,28 +122,26 @@
         <br>
         <br>
 
-        <div class="acceptance-bar-container">
-            <div class="acceptance-bar">
-                <div class="denied" style="width: 84%;"></div>
-              <div class="accepted" style="width: 60%;"></div>
-            </div>
-          </div>
-
-        <br>
-        <br>
-
-
         <!-- Wait time -->
-        <span class="text-container">Wait Time:</span>
-        <span class="time-text-container">"20" minutes</span>    
+        <label class="text-container">Wait Time: </label>
+        <label class="time-text-container" id="cityTime">--</label>
+        <label class="time-text-container"> minutes</label>    
     </div>
 
     <hr class="light-break">
 
     <div class="section-content">
-        <img id="logo" src="../images/Dannys.png" alt="Dannys">
+        <img id="logo" src="../images/Dannys.png" alt="Dannys" class="image-large">
         <div class="text-container">
-            <p>Danny's Pub</p> 
+            <p>Danny's Pub &emsp; 4.2 &nbsp;
+                <span style="display: inline-block;"> 
+                <img id="star" src="../images/RedStar.png" alt="RedStar" class="image-small">
+                <img id="star" src="../images/RedStar.png" alt="RedStar" class="image-small">
+                <img id="star" src="../images/RedStar.png" alt="RedStar" class="image-small">
+                <img id="star" src="../images/RedStar.png" alt="RedStar" class="image-small"> 
+                <img id="star" src="../images/GrayStar.png" alt="GrayStar" class="image-small">
+                </span>
+            </p>
             <p>328 W Gorham St, Madison, WI 53703</p><br >
             <p>Accepted or Denied?</p><br >
         </div>
@@ -152,28 +153,26 @@
         <br>
         <br>
 
-        <div class="acceptance-bar-container">
-            <div class="acceptance-bar">
-                <div class="denied" style="width: 84%;"></div>
-              <div class="accepted" style="width: 54%;"></div>
-            </div>
-          </div>
-
-        <br>
-        <br>
-
-
         <!-- Wait time -->
-        <span class="text-container">Wait Time:</span>
-        <span class="time-text-container">"5" minutes</span>    
+        <label class="text-container">Wait Time: </label>
+        <label class="time-text-container" id="dannysTime" >--</label>
+        <label class="time-text-container"> minutes</label>      
     </div>
 
     <hr class="light-break">
 
     <div class="section-content">
-        <img id="logo" src="../images/Luckys.png" alt="Luckys">
+        <img id="logo" src="../images/Luckys.png" alt="Luckys" class="image-large">
         <div class="text-container">
-            <p>Lucky's 1313 Brew Pub</p> 
+            <p>Lucky's 1313 Brew Pub &emsp; 4.1 &nbsp;
+                <span style="display: inline-block;"> 
+                <img id="star" src="../images/RedStar.png" alt="RedStar" class="image-small">
+                <img id="star" src="../images/RedStar.png" alt="RedStar" class="image-small">
+                <img id="star" src="../images/RedStar.png" alt="RedStar" class="image-small">
+                <img id="star" src="../images/RedStar.png" alt="RedStar" class="image-small"> 
+                <img id="star" src="../images/GrayStar.png" alt="GrayStar" class="image-small">
+                </span>
+            </p>
             <p>1313 Regent St, Madison, WI 53715</p><br >
             <p>Accepted or Denied?</p><br >
         </div>
@@ -185,28 +184,26 @@
         <br>
         <br>
 
-        <div class="acceptance-bar-container">
-            <div class="acceptance-bar">
-                <div class="denied" style="width: 84%;"></div>
-              <div class="accepted" style="width: 75%;"></div>
-            </div>
-          </div>
-
-        <br>
-        <br>
-
-
         <!-- Wait time -->
-        <span class="text-container">Wait Time:</span>
-        <span class="time-text-container">"35" minutes</span>    
+        <label class="text-container">Wait Time: </label>
+        <label class="time-text-container" id="lucksTime">--</label>
+        <label class="time-text-container"> minutes</label>   
     </div>
 
     <hr class="light-break">
 
     <div class="section-content">
-        <img id="logo" src="../images/Sconnies.png" alt="Sconnies">
+        <img id="logo" src="../images/Sconnies.png" alt="Sconnies" class="image-large">
         <div class="text-container">
-            <p>Sconnie Bar</p> 
+            <p>Sconnie Bar &emsp; 4.4 &nbsp;
+                <span style="display: inline-block;"> 
+                <img id="star" src="../images/RedStar.png" alt="RedStar" class="image-small">
+                <img id="star" src="../images/RedStar.png" alt="RedStar" class="image-small">
+                <img id="star" src="../images/RedStar.png" alt="RedStar" class="image-small">
+                <img id="star" src="../images/RedStar.png" alt="RedStar" class="image-small"> 
+                <img id="star" src="../images/GrayStar.png" alt="GrayStar" class="image-small">
+                </span>
+            </p> 
             <p>1421 Regent St, Madison, WI, 53711</p><br >
             <p>Accepted or Denied?</p><br >
         </div>
@@ -218,28 +215,26 @@
         <br>
         <br>
 
-        <div class="acceptance-bar-container">
-            <div class="acceptance-bar">
-                <div class="denied" style="width: 84%;"></div>
-              <div class="accepted" style="width: 80%;"></div>
-            </div>
-          </div>
-
-        <br>
-        <br>
-
-
         <!-- Wait time -->
-        <span class="text-container">Wait Time:</span>
-        <span class="time-text-container">"15" minutes</span>    
+        <label class="text-container">Wait Time: </label>
+        <label class="time-text-container" id="sconniesTime">--</label>
+        <label class="time-text-container"> minutes</label>      
     </div>
 
     <hr class="light-break">
 
     <div class="section-content">
-        <img id="logo" src="../images/Brats.png" alt="Brats">
+        <img id="logo" src="../images/Brats.png" alt="Brats" class="image-large">
         <div class="text-container">
-            <p>State Street Brats</p> 
+            <p>State Street Brats &emsp; 4.1 &nbsp;
+                <span style="display: inline-block;"> 
+                <img id="star" src="../images/RedStar.png" alt="RedStar" class="image-small">
+                <img id="star" src="../images/RedStar.png" alt="RedStar" class="image-small">
+                <img id="star" src="../images/RedStar.png" alt="RedStar" class="image-small">
+                <img id="star" src="../images/RedStar.png" alt="RedStar" class="image-small"> 
+                <img id="star" src="../images/GrayStar.png" alt="GrayStar" class="image-small">
+                </span>
+            </p> 
             <p>603 State St 1015, Madison, WI, 53703</p><br >
             <p>Accepted or Denied?</p><br >
         </div>
@@ -251,27 +246,26 @@
         <br>
         <br>
 
-        <div class="acceptance-bar-container">
-            <div class="acceptance-bar">
-                <div class="denied" style="width: 84%;"></div>
-              <div class="accepted" style="width: 45%;"></div>
-            </div>
-          </div>
-
-        <br>
-        <br>
-
         <!-- Wait time -->
-        <span class="text-container">Wait Time:</span>
-        <span class="time-text-container">"25" minutes</span>    
+        <label class="text-container">Wait Time: </label>
+        <label class="time-text-container" id="bratsTime">--</label>
+        <label class="time-text-container"> minutes</label>      
     </div>
     
     <hr class="light-break">
 
     <div class="section-content">
-        <img id="logo" src="../images/DoubleU.png" alt="DoubleU">
+        <img id="logo" src="../images/DoubleU.png" alt="DoubleU" class="image-large">
         <div class="text-container">
-            <p>The Double U</p> 
+            <p>The Double U &emsp; 3.6 &nbsp;
+                <span style="display: inline-block;"> 
+                <img id="star" src="../images/RedStar.png" alt="RedStar" class="image-small">
+                <img id="star" src="../images/RedStar.png" alt="RedStar" class="image-small">
+                <img id="star" src="../images/RedStar.png" alt="RedStar" class="image-small">
+                <img id="star" src="../images/GrayStar.png" alt="GrayStar" class="image-small"> 
+                <img id="star" src="../images/GrayStar.png" alt="GrayStar" class="image-small">
+                </span>
+            </p>
             <p>620 University Ave, Madison, WI 53715</p><br >
             <p>Accepted or Denied?</p><br >
         </div>
@@ -283,27 +277,26 @@
         <br>
         <br>
 
-        <div class="acceptance-bar-container">
-            <div class="acceptance-bar">
-                <div class="denied" style="width: 84%;"></div>
-              <div class="accepted" style="width: 25%;"></div>
-            </div>
-          </div>
-
-        <br>
-        <br>
-
         <!-- Wait time -->
-        <span class="text-container">Wait Time:</span>
-        <span class="time-text-container">"45" minutes</span>    
+        <label class="text-container">Wait Time: </label>
+        <label class="time-text-container" id="doubleuTime">--</label>
+        <label class="time-text-container"> minutes</label>   
     </div>
 
     <hr class="light-break">
 
     <div class="section-content">
-        <img id="logo" src="../images/KollegeKlub.png" alt="KollegeKlub">
+        <img id="logo" src="../images/KollegeKlub.png" alt="KollegeKlub" class="image-large">
         <div class="text-container">
-            <p>The Kollege Klub</p> 
+            <p>The Kollege Klub &emsp; 3.6 &nbsp;
+                <span style="display: inline-block;"> 
+                <img id="star" src="../images/RedStar.png" alt="RedStar" class="image-small">
+                <img id="star" src="../images/RedStar.png" alt="RedStar" class="image-small">
+                <img id="star" src="../images/RedStar.png" alt="RedStar" class="image-small">
+                <img id="star" src="../images/GrayStar.png" alt="GrayStar" class="image-small"> 
+                <img id="star" src="../images/GrayStar.png" alt="GrayStar" class="image-small">
+                </span>
+            </p> 
             <p>529 N Lake St, Madison, WI 53703</p><br >
             <p>Accepted or Denied?</p><br >
         </div>
@@ -314,27 +307,26 @@
         <br>
         <br>
 
-        <div class="acceptance-bar-container">
-            <div class="acceptance-bar">
-                <div class="denied" style="width: 84%;"></div>
-              <div class="accepted" style="width: 20%;"></div>
-            </div>
-          </div>
-
-        <br>
-        <br>
-
         <!-- Wait time -->
-        <span class="text-container">Wait Time:</span>
-        <span class="time-text-container">"45" minutes</span>    
+        <label class="text-container">Wait Time: </label>
+        <label class="time-text-container" id="kollegeKlubTime">--</label>
+        <label class="time-text-container"> minutes</label>    
     </div>
 
     <hr class="light-break">
 
     <div class="section-content">
-        <img id="logo" src="../images/Wandos.png" alt="Wandos">
+        <img id="logo" src="../images/Wandos.png" alt="Wandos" class="image-large">
         <div class="text-container">
-            <p>Wando's Bar and Grill</p> 
+            <p>Wando's Bar and Grill &emsp; 4.0 &nbsp;
+                <span style="display: inline-block;"> 
+                <img id="star" src="../images/RedStar.png" alt="RedStar" class="image-small">
+                <img id="star" src="../images/RedStar.png" alt="RedStar" class="image-small">
+                <img id="star" src="../images/RedStar.png" alt="RedStar" class="image-small">
+                <img id="star" src="../images/RedStar.png" alt="RedStar" class="image-small"> 
+                <img id="star" src="../images/GrayStar.png" alt="GrayStar" class="image-small">
+                </span>
+            </p> 
             <p>602 University Ave, Madison, WI 53715</p><br>
             <p>Accepted or Denied?</p><br >
         </div>
@@ -346,27 +338,26 @@
         <br>
         <br>
 
-        <div class="acceptance-bar-container">
-            <div class="acceptance-bar">
-                <div class="denied" style="width: 84%;"></div>
-              <div class="accepted" style="width: 42%;"></div>
-            </div>
-          </div>
-
-        <br>
-        <br>
-
         <!-- Wait time -->
-        <span class="text-container">Wait Time:</span>
-        <span class="time-text-container">"30" minutes</span>    
+        <label class="text-container">Wait Time: </label>
+        <label class="time-text-container" id="wandosTime">--</label>
+        <label class="time-text-container"> minutes</label>      
     </div>
 
     <hr class="light-break">
 
     <div class="section-content">
-        <img id="logo" src="../images/WhiskeyJacks.png" alt="WhiskeyJacks">
+        <img id="logo" src="../images/WhiskeyJacks.png" alt="WhiskeyJacks" class="image-large">
         <div class="text-container">
-            <p>Whiskey Jack's Saloon</p> 
+            <p>Whiskey Jack's Saloon &emsp; 3.8 &nbsp;
+                <span style="display: inline-block;"> 
+                <img id="star" src="../images/RedStar.png" alt="RedStar" class="image-small">
+                <img id="star" src="../images/RedStar.png" alt="RedStar" class="image-small">
+                <img id="star" src="../images/RedStar.png" alt="RedStar" class="image-small">
+                <img id="star" src="../images/GrayStar.png" alt="GrayStar" class="image-small"> 
+                <img id="star" src="../images/GrayStar.png" alt="GrayStar" class="image-small">
+                </span>
+            </p> 
             <p>552 State St, Madison, WI 53703</p><br>
             <p>Accepted or Denied?</p><br >
         </div>
@@ -378,28 +369,21 @@
         <br>
         <br>
 
-        <div class="acceptance-bar-container">
-            <div class="acceptance-bar">
-                <div class="denied" style="width: 84%;"></div>
-              <div class="accepted" style="width: 30%;"></div>
-            </div>
-          </div>
-
-        <br>
-        <br>
-
         <!-- Wait time -->
-        <span class="text-container">Wait Time:</span>
-        <span class="time-text-container">"40" minutes</span>    
+        <label class="text-container">Wait Time: </label>
+        <label class="time-text-container" id="WhiskeyJacksTime">--</label>
+        <label class="time-text-container"> minutes</label>    
     </div>
 
     <br>
+    <div id="responsecontainer" align="center">
 
+    </div>
     <!-- Footer -->
     <footer>
         <div class ="footerContainer">
             <div class="socialIcons">
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.instagram.com/ubarmadison/"><i class="fa-brands fa-instagram"></i></a>
             </div>
             <div class="footerNav">
                 <ul>
@@ -411,5 +395,50 @@
         </div>
     </footer>
 
+    <script>
+        $(document).ready(function() {
+            $.ajax({
+                type: "GET", 
+                url: "../dynamics/waitTime.php", 
+                dataType: "html", 
+                success: function(data) {
+                    var ans = jQuery.parseJSON(data)
+                    $('#chasersTime').text(ans[0]);
+                    $('#churchkeyTime').text(ans[1]);
+                    $('#cityTime').text(ans[2]);
+                    $('#dannysTime').text(ans[3]);
+                    $('#lucksTime').text(ans[4]);
+                    $('#sconniesTime').text(ans[5]);
+                    $('#bratsTime').text(ans[6]);
+                    $('#doubleuTime').text(ans[7]);
+                    $('#kollegeKlubTime').text(ans[8]);
+                    $('#wandosTime').text(ans[9]);
+                    $('#WhiskeyJacksTime').text(ans[10]);
+                }
+            });
+        });
+
+        $(document).ready(function() {
+            $.ajax({
+                type: "GET", 
+                url: "../dynamics/acceptanceRate.php", 
+                dataType: "html", 
+                success: function(data) {
+                    var ans = jQuery.parseJSON(data)
+                    $('#chasersAccept').text(ans[0]);
+                    $('#churchkeyAccept').text(ans[1]);
+                    $('#cityAccept').text(ans[2]);
+                    $('#dannysAccept').text(ans[3]);
+                    $('#lucksAccept').text(ans[4]);
+                    $('#sconniesAccept').text(ans[5]);
+                    $('#bratsAccept').text(ans[6]);
+                    $('#doubleuAccept').text(ans[7]);
+                    $('#kollegeKlubAccept').text(ans[8]);
+                    $('#wandosAccept').text(ans[9]);
+                    $('#WhiskeyJacksAccept').text(ans[10]);
+                }
+            });
+        });
+    </script>
 </body>
 </html>
