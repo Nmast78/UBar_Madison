@@ -70,9 +70,16 @@
     flex-direction: column;
 }
 
+body {
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+}
+
 footer {
-    margin-top: auto;
     background-color: rgb(59, 59, 59);
+    width: 100%; 
+    position: absolute;
+    bottom: 0;
 }
 
 .footerContainer {

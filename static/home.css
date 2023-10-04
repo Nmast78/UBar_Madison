@@ -109,8 +109,15 @@ img {
 
 
 /* Footer CSS */
+body {
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+}
+
 footer {
     background-color: rgb(59, 59, 59);
+    width: 100%; 
+    position: absolute;
 }
 
 .footerContainer {
