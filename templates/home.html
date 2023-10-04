@@ -13,28 +13,35 @@
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <!-- Header containing logo, name, and horizontal line -->
-    <header>
-        <div class="header-content">
-            <img id="mainLogo" src="../images/UBar.png" alt="UBar" class="image-large">
-            <div class="head-text">
-                <p id="UBar">UBar-</p>
-                <p id="Madison">&nbsp;Madison</p>
-            </div>
-            <hr class="break">
+    <headerNav>
+        <div class="headerNav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html"> About</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
         </div>
+    </headerNav>
+
+    <header>
+            <div class="header-content">
+                <div class="head-text">
+                    <p id="Madison"></p>
+                </div>
+            </div>
     </header>
 
     <!-- Section to get user to add their own input -->
-    <div class="text">
-        <p><center>Add Your Experience Here!</center></p>
-        <div class="button">
-            <button onclick="goToAddPage('addBar.html')" id="insert-input">ADD</button>
+    
+    <addExp>
+        <div class="addExpText">
+            <p class="white-box"><center>Add Your Experience Here!</center></p>
+            <div class="button">
+                <button onclick="goToAddPage('addBar.html')" id="insert-input">ADD</button>
+            </div>
         </div>
-    </div>
+    </addExp>
 
-    <br>
-    <hr class="light-break">
 
     <!-- List containing most popular bars, hardcoded for now -->
     <div class="section-content">
@@ -106,7 +113,7 @@
         <div class="acceptance-bar-container">
             <div class="acceptance-bar">
                 <div class="denied" style="width: 84%;"></div>
-              <div class="accepted" style="width: 40%;"></div>
+              <div class="accepted" style="width: 70%;"></div>
               <!-- <div class="denied" style="width: <?php echo $deniedPercentage; ?>%;"></div>
               <div class="accepted" style="width: <?php echo $acceptedPercentage; ?>%;"></div> -->
             </div>
