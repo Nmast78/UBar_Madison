@@ -113,7 +113,7 @@ header {
 .light-break {
     border: 1px solid crimson;
     width: 75px;
-    margin-left: 10px;
+    margin-left: 2px;
     margin-top: 10px;
     margin-bottom: -10px;
 }
@@ -133,7 +133,6 @@ header {
 /* Change text for "About" header */
 .about-content h1{
     font-size: 30px;
-    padding-left: 10px;
     padding-right: 10px;
 }     
 
