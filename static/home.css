@@ -124,6 +124,19 @@ header {
     width: 375px;
 }
 
+.headerLight-break {
+    border: 1px solid crimson;
+    width: 75px;
+    margin-left: 12px;
+    margin-top: 50px;
+    margin-bottom: -5px;
+}
+
+.subHeader-content h1{
+    font-size: 28px;
+    padding-left: 10px;
+}     
+
 /* Button for users to add their experience */
 .text {
     font-family: 'Times New Roman', Times, serif;
