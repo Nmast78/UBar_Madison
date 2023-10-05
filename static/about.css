@@ -55,6 +55,11 @@
 }     
 
 /* Change text for "About" header */
+.about-section {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
 .about-content h1 {
     font-size: 30px;
 }     
