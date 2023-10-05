@@ -3,17 +3,89 @@
 
 
 /* Capitol logo in header */
+#mainLogo {
+    max-width: 90px;
+    height: auto;
+    margin:  0;   
+}
+
 #logo {
     max-width: 70px;
     height: auto;
     margin: none;
     padding-top: 12px;
+    padding-left: 12px;
 }
 
+/* Header CSS */
+body {
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+}
 
-/* Header business name */
+.headerNav {
+    margin: 30px 0px;
+    height: 15px; /* Adjust the height as needed */
+    background-color: crimson;
+}
+
+.headerNav ul {
+   display: flex;
+   justify-content: center;
+   list-style: none;
+   padding: 0;
+   background-color: crimson;
+   padding-top: 12px;
+   padding-bottom: 15px;
+
+}
+
+.headerNav ul li a {
+   color: white;
+   margin: 20px;
+   text-decoration: none;
+   font-size: 1.3em;
+   opacity: 0.7;
+   transition: 0.5s;
+}
+
+.headerNav ul li a:hover {
+   opacity: 1;
+}
+
+header {
+    background-image: url('../images/AboutBackground.png');
+    background-size: cover; /* Adjust as needed */
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 100px;
+}
+
+.headerContainer {
+    width: 100%;
+    padding: 10px 5px 10px;
+}
+
+.headerBottom {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+.headerBottom p {
+    color: white;
+}
+
 .head-text {
     display: inline-flex;
+    padding-left: 10px;
+}
+
+.header-content {
+    /* background-color: black; */
+    background: url('CapitalBackground.png');
+    background-size: cover;
+    padding: 30px;
 }
 
 #UBar {
@@ -40,6 +112,8 @@
 
 .light-break {
     margin-top: 5px;
+    border: 1px solid crimson;
+    width: 375px;
 }
     
 /* Change image size */
@@ -55,8 +129,17 @@
 }     
 
 /* Change text for "About" header */
-.about-content h1 {
+.about-content h1{
+    font-family: 'Red Hat Display';
     font-size: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}     
+
+.about-content {
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }     
 
 /* Footer CSS */
@@ -73,7 +156,6 @@ body {
 }
 
 footer {
-    margin-top: auto;
     background-color: rgb(59, 59, 59);
     width: 100%; 
     position: absolute;
