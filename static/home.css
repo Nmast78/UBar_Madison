@@ -3,44 +3,118 @@
 
 
 /* Capitol logo in header */
+#mainLogo {
+    max-width: 90px;
+    height: auto;
+    margin:  0;  
+}
+
 #logo {
     max-width: 70px;
     height: auto;
     margin: none;
     padding-top: 12px;
+    padding-left: 12px;
 }
 
+.addExp {
+    margin: 0;
+    background-color: crimson;
+}
+.addExpText {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    background-color: crimson;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+/* Header CSS */
+body {
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+}
+.headerNav {
+    margin: 30px 0px;
+    height: 15px; /* Adjust the height as needed */
+    background-color: crimson;
+}
+.headerNav ul {
+   display: flex;
+   justify-content: center;
+   list-style: none;
+   padding: 0;
+   background-color: crimson;
+   padding-top: 12px;
+   padding-bottom: 15px;
+}
+.headerNav ul li a {
+   color: white;
+   margin: 20px;
+   text-decoration: none;
+   font-size: 1.3em;
+   opacity: 0.7;
+   transition: 0.5s;
+}
+.headerNav ul li a:hover {
+   opacity: 1;
+}
+
+header {
+    background-image: url('../images/CapitalBackground.png');
+    background-size: cover; /* Adjust as needed */
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 100px;
+}
+.headerContainer {
+    width: 100%;
+    padding: 10px 5px 10px;
+}
+.headerBottom {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.headerBottom p {
+    color: white;
+}
 
 /* Header business name */
 .head-text {
     display: inline-flex;
+    padding-left: 10px;
 }
 
 #UBar {
-    color: black;
+    color: white;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 26px;
+    font-size: 30px;
     font-weight: 700;
     padding-top: 30px;
 }
 
 #Madison {
-    color:crimson;
+    color:white;
     font-family:'Borel';
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 600;
-    padding-top: 33px;
+    padding-top: 31px;
 }
 
 
 /* Horizontal line */
 .break {
     margin-top: -30px;
-    border: 1px solid;
+    border: 1px solid crimson;
 }
 
 .light-break {
     margin-top: 5px;
+    border: 1px solid crimson;
+    width: 375px;
 }
 
 /* Button for users to add their experience */
@@ -57,8 +131,8 @@
 }
 
 #insert-input {
-    background-color:rgb(36, 179, 7);
-    color: white;
+    background-color: white;
+    color: crimson;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     border: none;
@@ -93,18 +167,21 @@ img {
     font-family: 'Times New Roman', Times, serif;
     font-size: 14px;
     font-weight: 600;
+    padding-left: 12px;
 }
 
 /* Acceptance percentage text */    
 .graph-text-container {
     color: green;
     font-size: 20px;
+    padding-left: 12px;
 }
 
 /* Current waiting time text */    
 .time-text-container {
     font-weight: 600;
     font-size: 25px;
+    padding-left: 12px;
 }
 
 
