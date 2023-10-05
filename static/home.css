@@ -88,6 +88,13 @@ header {
     padding-left: 10px;
 }
 
+.header-content {
+    /* background-color: black; */
+    background: url('CapitalBackground.png');
+    background-size: cover;
+    padding: 30px;
+}
+
 #UBar {
     color: white;
     font-family: 'Times New Roman', Times, serif;
