@@ -20,6 +20,7 @@
 body {
     margin: 0; /* Reset margin */
     padding: 0; /* Reset padding */
+    overflow-x: hidden;
 }
 
 .headerNav {
@@ -152,7 +153,6 @@ header {
 body {
     margin: 0; /* Reset margin */
     padding: 0; /* Reset padding */
-    overflow-x: hidden;
 }
 
 footer {

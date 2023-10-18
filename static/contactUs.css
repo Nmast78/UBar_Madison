@@ -3,25 +3,92 @@
 
 
 /* Capitol logo in header */
+#mainLogo {
+    max-width: 90px;
+    height: auto;
+    margin:  0;   
+}
+
 #logo {
     max-width: 70px;
     height: auto;
     margin: none;
     padding-top: 12px;
+    padding-left: 12px;
 }
 
+.headerNav {
+    margin: 30px 0px;
+    height: 15px; /* Adjust the height as needed */
+    background-color: crimson;
+}
 
-/* Header business name */
+.headerNav ul {
+   display: flex;
+   justify-content: center;
+   list-style: none;
+   padding: 0;
+   background-color: crimson;
+   padding-top: 12px;
+   padding-bottom: 15px;
+
+}
+
+.headerNav ul li a {
+   color: white;
+   margin: 20px;
+   text-decoration: none;
+   font-size: 1.3em;
+   opacity: 0.7;
+   transition: 0.5s;
+}
+
+.headerNav ul li a:hover {
+   opacity: 1;
+}
+
+header {
+    background-image: url('../images/ContactUsBackground.png');
+    background-size: cover; /* Adjust as needed */
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 100px;
+}
+
+.headerContainer {
+    width: 100%;
+    padding: 10px 5px 10px;
+}
+
+.headerBottom {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+.headerBottom p {
+    color: white;
+}
+
 .head-text {
     display: inline-flex;
+    padding-left: 10px;
+}
+
+.header-content {
+    /* background-color: black; */
+    background: url('CapitalBackground.png');
+    background-size: cover;
+    padding: 30px;
+    text-align: center; /* Center-align text */
+
 }
 
 #UBar {
     color: black;
     font-family: 'Times New Roman', Times, serif;
     font-size: 26px;
-    font-weight: 700;
-    padding-top: 30px;
+    font-weight: 600;
 }
 
 #Madison {
@@ -32,7 +99,6 @@
     padding-top: 31px;
 }
 
-
 /* Horizontal line */
 .break {
     margin-top: -30px;
@@ -40,7 +106,11 @@
 }
 
 .light-break {
-    margin-top: 5px;
+    border: 1px solid crimson;
+    width: 75px;
+    margin-left: 2px;
+    margin-top: 10px;
+    margin-bottom: -10px;
 }
 
 /* Button to add experience*/
@@ -63,24 +133,58 @@
     padding-bottom: 15px;
 }
 
-/* Footer CSS */
-.page-container {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+/* Change image size */
+.image-small {
+    max-width: 125px; 
+    height: auto;
 }
 
+.image-medium {
+    max-width: 230px; 
+    height: auto;
+    align-items: center;
+}     
+
+/* Change text for "About" header */
+.contactUs-content h1{
+    font-size: 28px;
+    padding-right: 10px;
+}     
+
+.contactUs-content {
+    font-size: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
+}     
+
+/* Red Text Box Styles */
+.red-text-box {
+    background-color: crimson;
+    color: white;
+    text-align: left;
+    padding: 15px 30px;
+    border-radius: 10px; 
+    margin-left: 25px; /* Add margin to the left */
+    margin-right: 25px; /* Add margin to the right */
+
+}
+
+.text-box-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+/* Footer CSS */
 body {
     margin: 0; /* Reset margin */
     padding: 0; /* Reset padding */
-    overflow-x: hidden;
-
 }
 
 footer {
     background-color: rgb(59, 59, 59);
     width: 100%; 
-    position: absolute;
+    position: 0;
     bottom: 0;
 }
 
@@ -151,77 +255,4 @@ footer {
     letter-spacing: 1px;
     font-weight: 400;
     margin: 0px 5px;
-}
-
-/* Popup container */
-.popupContainer {
-    width: 100%;
-    height: 100;
-    outline:rgb(36, 179, 7);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.btn {
-    padding: 10px 60px;
-    background: #fff;
-    border: 0;
-    outline: none;
-    cursor: pointer;
-    font-size: 22px;
-    font-weight: 500;
-    border-radius: 30px;
-}
-  
-.popup {
-    width: 400px;
-    background: #fff;
-    border-radius: 6px;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.1);
-    text-align: center;
-    padding: 0 30px 30px;
-    color: #333;
-    visibility: hidden;
-    transition: transform 0.4s, top 0.4s;
-}
-
-.open-popup {
-    visibility: visible;
-    top: 50%;
-    transform: translate(-50%,-50%) scale(1);
-    width: 100%;
-    height: 100%;
-    background: white;
-}
-
-.popup img {
-    width: 100px;
-    margin-top: 50px;
-    border-radius: 50%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.popup h2 {
-    font-size: 38px;
-    font-weight: 500;
-    margin: 30px 0 10px;
-}
-
-.popup button {
-    width: 100%;
-    margin-top: 50px;
-    padding: 10px 0;
-    border: 0;
-    background: green;
-    color: #fff;
-    border: 0;
-    outline: none;
-    font-size: 18px;
-    border-radius: 4px;
-    cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }

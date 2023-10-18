@@ -12,50 +12,53 @@
 </head>
 <body>
 
+    <headerNav>
+        <div class="headerNav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html"> About</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </headerNav>
+
+    <header>
+        <div class="header-content">
+            <div class="head-text">
+                <p id="Madison"></p>
+            </div>
+        </div>
+    </header>   
+
     <div class="page-container">
-        <!-- Header containing logo, name, and horizontal line -->
-        <header>
-            <div class="header-content">
-                <img id="logo" src="../images/Capital.png" alt="Capitol">
-                <div class="head-text">
-                    <p id="UBar">UBar-</p>
-                    <p id="Madison">&nbsp;Madison</p>
-                </div>
-                <hr class="break">
-            </div>
-        </header>
+        <br>
 
-        <!-- Section giving the user the opportunity to contact UBar -->
-        <div class="contactContainer">
-            <h1>Contact Us</h1>
-            <p>If you have any questions or feedback, feel free to get in touch with us.</p><br>
-
-            <form action="..dynamics/contactUs.php" method="post">
-                <label for="name">Name: </label>
-                <input type="text" id="name" name="name" required><br><br><br>
+        <!-- Section informing users what UBar is about -->
+        <section class="contactUs-section">
+            <div class="contactUs-content">
+                <br>
+                <hr class="light-break">
+                <h1>Contact Us</h1>
                 
-                <label for="email">Email: </label>
-                <input type="email" id="email" name="email" required><br><br><br>
+                <p>We greatly value your opinions and suggestions. Your feedback helps us improve and provide you with the best possible experience. Please don't hesitate to share your thoughts with us – whether it's a compliment, a concern, or an idea for improvement. We're here to listen and make your experience even better!</p>
 
-                <label for="message">Message: </label>
-                <textarea id="message" name="message" rows="10" required></textarea><br><br><br>
+                <br>
 
-            </form>
-        </div>
+                <p>Email: <b>admin@ubarmadison.com</b></p>
 
-        <!-- Popup thanking user for submitting details, sends them back to home page -->
-        <div class="popupContainer">
-            <button type="submit" class="btn" onclick="openPopup()" id="insert-input">Submit</button>
-            <div class="popup" id="popup">
-                <img id="popup img" src="../images/Tick.png" alt="Tick">
-                <h2>Thank You!</h2>
-                <p>Your details have been successfully submitted. Thanks!</p>
-                <button type="button" onclick="goToHomePage('home.html')">OK</button>
+                <!-- If we want red text bo -->
+                <!-- <section class="red-text-box">
+                    <div class="text-box-content">
+                        <p>We greatly value your opinions and suggestions. Your feedback helps us improve and provide you with the best possible experience.</p>
+                        <br>
+                        <p>Email: <u><b>admin@ubarmadison.com</b></u></p>
+                    </div>
+                </section> -->
+                
+                <br>
+
             </div>
-        </div>
-
-        <br>
-        <br>
+        </section>
 
         <!-- Footer -->
         <footer>
